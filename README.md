@@ -1,3 +1,6 @@
+A fork slightly edited to run on 10$ salad.com  
+
+
 # nanochat
 
 ![nanochat logo](dev/nanochat.png)
