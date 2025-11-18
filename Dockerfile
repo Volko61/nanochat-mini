@@ -17,4 +17,4 @@ RUN chmod +x speedrun_1gpu.sh
 # UV installs here
 ENV PATH="/root/.local/bin:${PATH}"
 
-CMD ["bash", "speedrun_1gpu.sh"]
+CMD ["bash", "speedrun_1g.sh"]
