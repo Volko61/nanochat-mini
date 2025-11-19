@@ -1,4 +1,5 @@
-A fork slightly edited to run on 10$ salad.com  
+A fork slightly edited to run on 10$ salad.com  (1x5090 on Vast.ai)
+To train a 100M model on French
 
 
 # nanochat
