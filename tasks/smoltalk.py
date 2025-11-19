@@ -9,11 +9,13 @@ from tasks.common import Task
 
 class SmolTalk(Task):
     """ smol-smoltalk dataset. train is 460K rows, test is 24K rows. """
-
     def __init__(self, split, **kwargs):
         super().__init__(**kwargs)
         assert split in ["train", "test"], "SmolTalk split must be train|test"
-        self.ds = load_dataset("HuggingFaceTB/smol-smoltalk", split=split).shuffle(seed=42)
+        
+        # UPDATE THIS LINE
+        self.ds = load_dataset("Volko76/smol-smoltalk-french-instruction-dataset", split=split).shuffle(seed=42)
+        
         self.length = len(self.ds)
 
     def num_examples(self):
