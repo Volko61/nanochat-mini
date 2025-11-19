@@ -19,9 +19,10 @@ from nanochat.common import get_base_dir
 # -----------------------------------------------------------------------------
 # The specifics of the current pretraining dataset
 
-# The URL on the internet where the data is hosted and downloaded from on demand
-BASE_URL = "https://huggingface.co/datasets/karpathy/fineweb-edu-100b-shuffle/resolve/main"
-MAX_SHARD = 1822 # the last datashard is shard_01822.parquet
+# The URL on the internet where the data is hosted and downloaded from on demandhttps://huggingface.co/datasets/Volko76/french-pd-books-shuffle/tree/main
+# BASE_URL = "https://huggingface.co/datasets/karpathy/fineweb-edu-100b-shuffle/resolve/main"
+BASE_URL = "https://huggingface.co/datasets/Volko76/french-pd-books-shuffle/resolve/main"
+MAX_SHARD = 124 # the last datashard is shard_01822.parquet
 index_to_filename = lambda index: f"shard_{index:05d}.parquet" # format of the filenames
 base_dir = get_base_dir()
 DATA_DIR = os.path.join(base_dir, "base_data")
